@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Username</th>
+        <th>Password</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user : ${messages}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.username}"></td>
+        <td th:text="${user.password}"></td>
+    </tr>
+    </tbody>
+
+</table>
+<br>
+<a href="del">Delete</a>
+<br>
+<br>
+<a href="edit">Edit</a>
+<br>
+<br>
+<a href="new">New</a>
+<br>
+<br>
+<a href="http://localhost:8080">Back to main page</a>
+<br>
+<br>
+<a href="/user">To user page</a>
+<br>
+<br>
+<a href="/logout">Logout</a>
+</body>
+</html>

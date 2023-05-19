@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>Your information!</h1>
+<br>
+<a th:text="${userInfo.username}"></a>
+<br>
+<a th:text="${userInfo.getRoles()}"></a>
+<br>
+<br>
+<a href="http://localhost:8080">Back to main page</a>
+<br>
+<br>
+<a href="/logout">Logout</a>
+</body>
+</html>
